@@ -1,3 +1,5 @@
+'''Written By Manish Jha'''
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -10,6 +12,10 @@ class TwitterBot:
         self.bot = webdriver.Chrome(r"C:\Users\manis\driver\chromedriver.exe")
 
     def login(self):
+
+        ''' This function login to your twitter account slowly giviong
+         time to browser to load the website properly'''
+
         bot = self.bot
         bot.get('https://twitter.com/')
         time.sleep(3)
